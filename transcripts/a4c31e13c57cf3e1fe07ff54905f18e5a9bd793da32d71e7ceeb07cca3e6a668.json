@@ -1,0 +1,11 @@
+{
+  "agent": "worker",
+  "response": {
+    "owner": "p.larsen",
+    "category": "RENEWAL",
+    "amount": 4750.0,
+    "deadline": "2026-07-23"
+  },
+  "response_hash": "sha256:a4c31e13c57cf3e1fe07ff54905f18e5a9bd793da32d71e7ceeb07cca3e6a668",
+  "delivered_fields_hash": "sha256:a4c31e13c57cf3e1fe07ff54905f18e5a9bd793da32d71e7ceeb07cca3e6a668"
+}

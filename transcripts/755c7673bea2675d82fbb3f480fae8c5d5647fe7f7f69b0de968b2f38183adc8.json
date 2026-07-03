@@ -1,0 +1,11 @@
+{
+  "agent": "worker",
+  "response": {
+    "owner": "v.serrano",
+    "category": "REPORT",
+    "amount": 5300,
+    "deadline": "2026-07-29"
+  },
+  "response_hash": "sha256:755c7673bea2675d82fbb3f480fae8c5d5647fe7f7f69b0de968b2f38183adc8",
+  "delivered_fields_hash": "sha256:755c7673bea2675d82fbb3f480fae8c5d5647fe7f7f69b0de968b2f38183adc8"
+}

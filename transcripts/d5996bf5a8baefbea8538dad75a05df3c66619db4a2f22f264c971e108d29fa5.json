@@ -1,0 +1,11 @@
+{
+  "agent": "worker",
+  "response": {
+    "owner": "f.haddad",
+    "category": "RENEWAL",
+    "amount": 5300.0,
+    "deadline": "2026-07-18"
+  },
+  "response_hash": "sha256:d5996bf5a8baefbea8538dad75a05df3c66619db4a2f22f264c971e108d29fa5",
+  "delivered_fields_hash": "sha256:d5996bf5a8baefbea8538dad75a05df3c66619db4a2f22f264c971e108d29fa5"
+}

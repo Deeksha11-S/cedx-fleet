@@ -1,0 +1,11 @@
+{
+  "agent": "worker",
+  "response": {
+    "owner": "t.novak",
+    "category": "REPORT",
+    "amount": 5250,
+    "deadline": "2026-08-02"
+  },
+  "response_hash": "sha256:63d002990647136741a8397c71ac83dd321e0baef48bf55e3257272765a6d688",
+  "delivered_fields_hash": "sha256:63d002990647136741a8397c71ac83dd321e0baef48bf55e3257272765a6d688"
+}

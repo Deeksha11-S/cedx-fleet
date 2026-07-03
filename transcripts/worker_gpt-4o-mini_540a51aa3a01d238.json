@@ -1,0 +1,12 @@
+{
+  "agent": "worker",
+  "model": "gpt-4o-mini",
+  "prompt": "\n        You are a worker agent that processes a work request.\n        Given the following record, extract the core fields and decide if it can be approved.\n\n        Record:\n        - ID: REC-020\n        - Owner: t.novak\n        - Category: REPORT\n        - Amount: 5250\n        - Deadline: 2026-08-02\n        - Notes: Monthly figures.\n\n        Instructions:\n        - If the category is \"REVIEW\", you must flag for manual review.\n        - If the category is \"REPORT\", it is generally approvable.\n        - Otherwise, approve if all fields are present and amount < 100000.\n        - Output a JSON with keys: \"decision\" (\"APPROVE\" or \"REVIEW\" or \"REJECT\"), \"confidence\" (0-1), \"reason\" (string).\n        ",
+  "response": "{\"decision\": \"APPROVE\", \"confidence\": 0.95, \"reason\": \"All fields valid\"}",
+  "tokens_in": 124,
+  "tokens_out": 10,
+  "cost_usd": 1e-05,
+  "latency_ms": 215,
+  "retries": 0,
+  "timestamp": 1783082467.2160623
+}

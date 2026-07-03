@@ -1,0 +1,11 @@
+{
+  "agent": "worker",
+  "response": {
+    "owner": "b.ortiz",
+    "category": "RENEWAL",
+    "amount": 5200,
+    "deadline": "2026-07-20"
+  },
+  "response_hash": "sha256:1145b9be412092aa0d5a233b0a6c3d02da8b1644ef9770cd818ed8841a2e4bbb",
+  "delivered_fields_hash": "sha256:1145b9be412092aa0d5a233b0a6c3d02da8b1644ef9770cd818ed8841a2e4bbb"
+}

@@ -1,0 +1,11 @@
+{
+  "agent": "worker",
+  "response": {
+    "owner": "s.haque",
+    "category": "ONBOARDING",
+    "amount": 4850,
+    "deadline": "2026-07-27"
+  },
+  "response_hash": "sha256:e803da9810934da65e0afdd2c2c387c5ff4893cee62884d884d8002225b964c5",
+  "delivered_fields_hash": "sha256:e803da9810934da65e0afdd2c2c387c5ff4893cee62884d884d8002225b964c5"
+}

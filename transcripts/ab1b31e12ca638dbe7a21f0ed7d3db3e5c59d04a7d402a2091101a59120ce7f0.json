@@ -1,0 +1,11 @@
+{
+  "agent": "worker",
+  "response": {
+    "owner": "d.kapoor",
+    "category": "REPORT",
+    "amount": 6100,
+    "deadline": "2026-08-01"
+  },
+  "response_hash": "sha256:ab1b31e12ca638dbe7a21f0ed7d3db3e5c59d04a7d402a2091101a59120ce7f0",
+  "delivered_fields_hash": "sha256:ab1b31e12ca638dbe7a21f0ed7d3db3e5c59d04a7d402a2091101a59120ce7f0"
+}

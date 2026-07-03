@@ -1,0 +1,11 @@
+{
+  "agent": "worker",
+  "response": {
+    "owner": "j.cohen",
+    "category": "INTAKE",
+    "amount": 5100.0,
+    "deadline": "2026-07-25"
+  },
+  "response_hash": "sha256:c4191e25433c83c792aeef270177a7425eec53f69ecf2e3c90911512175bacf2",
+  "delivered_fields_hash": "sha256:c4191e25433c83c792aeef270177a7425eec53f69ecf2e3c90911512175bacf2"
+}

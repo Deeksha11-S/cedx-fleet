@@ -1,0 +1,11 @@
+{
+  "agent": "worker",
+  "response": {
+    "owner": "i.rossi",
+    "category": "ONBOARDING",
+    "amount": 4600,
+    "deadline": "2026-07-30"
+  },
+  "response_hash": "sha256:e2e80d72d7a0e8b5ef2e4601847949a55583a963e580f8ba1ad9506df93c1ecb",
+  "delivered_fields_hash": "sha256:e2e80d72d7a0e8b5ef2e4601847949a55583a963e580f8ba1ad9506df93c1ecb"
+}

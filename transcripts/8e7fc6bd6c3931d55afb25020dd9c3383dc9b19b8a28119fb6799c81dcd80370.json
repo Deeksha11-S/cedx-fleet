@@ -1,0 +1,11 @@
+{
+  "agent": "worker",
+  "response": {
+    "owner": "r.ferreira",
+    "category": "REVIEW",
+    "amount": 5150,
+    "deadline": "2026-08-03"
+  },
+  "response_hash": "sha256:8e7fc6bd6c3931d55afb25020dd9c3383dc9b19b8a28119fb6799c81dcd80370",
+  "delivered_fields_hash": "sha256:8e7fc6bd6c3931d55afb25020dd9c3383dc9b19b8a28119fb6799c81dcd80370"
+}

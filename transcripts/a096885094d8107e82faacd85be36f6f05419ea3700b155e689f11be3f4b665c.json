@@ -1,0 +1,11 @@
+{
+  "agent": "worker",
+  "response": {
+    "owner": "c.nguyen",
+    "category": "REVIEW",
+    "amount": 3900,
+    "deadline": "2026-07-10"
+  },
+  "response_hash": "sha256:a096885094d8107e82faacd85be36f6f05419ea3700b155e689f11be3f4b665c",
+  "delivered_fields_hash": "sha256:a096885094d8107e82faacd85be36f6f05419ea3700b155e689f11be3f4b665c"
+}

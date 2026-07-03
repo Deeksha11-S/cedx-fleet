@@ -1,0 +1,11 @@
+{
+  "agent": "worker",
+  "response": {
+    "owner": "q.abate",
+    "category": "REPORT",
+    "amount": 4650.0,
+    "deadline": "2026-07-24"
+  },
+  "response_hash": "sha256:f4609c94a9210d30a9af28aa9178f073764240715f6394c55ea91d46858ac19d",
+  "delivered_fields_hash": "sha256:f4609c94a9210d30a9af28aa9178f073764240715f6394c55ea91d46858ac19d"
+}

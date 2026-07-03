@@ -1,0 +1,11 @@
+{
+  "agent": "worker",
+  "response": {
+    "owner": "e.moreau",
+    "category": "INTAKE",
+    "amount": 4500,
+    "deadline": "2026-07-28"
+  },
+  "response_hash": "sha256:395b355df37dcdb50831e82d88ae4fd17aca679504f7e9571be04bd0427521bd",
+  "delivered_fields_hash": "sha256:395b355df37dcdb50831e82d88ae4fd17aca679504f7e9571be04bd0427521bd"
+}

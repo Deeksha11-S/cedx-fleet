@@ -2,3 +2,4 @@
 # if you build in another language, replace these with your own deps.
 jsonschema>=4.0
 pypdf>=4.0
+pdfplumber

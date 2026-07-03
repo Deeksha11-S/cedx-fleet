@@ -17,4 +17,4 @@ ENV SEED_DIR=/app/seed
 
 # Must produce /app/out/<package>, /app/out/audit.json, /app/out/exception_queue.json
 # and self-verify. Replace with your own entrypoint if you don't use make.
-CMD ["sh", "-c", "make demo && make verify"]
+CMD ["python", "main.py"]

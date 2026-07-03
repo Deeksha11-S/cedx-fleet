@@ -1,0 +1,12 @@
+{
+  "agent": "verifier",
+  "model": "gpt-4o-mini",
+  "prompt": "\n        You are an independent verifier agent. Your task is to check the worker's decision.\n\n        Original record:\n        - ID: REC-007\n        - Owner: g.silva\n        - Category: REVIEW\n        - Amount: 4700.0\n        - Deadline: 2026-07-22\n        - Notes: Standard review, all inputs present.\n\n        Worker's decision:\n        - Decision: APPROVE\n        - Confidence: 0.95\n        - Reason: All fields valid\n        - Delivered fields: {'owner': 'g.silva', 'category': 'REVIEW', 'amount': 4700.0, 'deadline': '2026-07-22'}\n\n        Instructions:\n        - Verify that the decision is consistent with the record.\n        - If the worker approved something that is obviously wrong (e.g., amount > 100000, missing owner), reject it.\n        - If the worker flagged manual review correctly, approve that.\n        - Output a JSON with keys: \"verdict\" (\"pass\" or \"fail\" or \"needs_human\"), \"reason\" (string).\n        ",
+  "response": "{\"verdict\": \"pass\", \"reason\": \"Worker decision is consistent\"}",
+  "tokens_in": 149,
+  "tokens_out": 9,
+  "cost_usd": 1e-05,
+  "latency_ms": 201,
+  "retries": 0,
+  "timestamp": 1783082467.2758138
+}

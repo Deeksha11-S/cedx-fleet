@@ -1,0 +1,11 @@
+{
+  "agent": "worker",
+  "response": {
+    "owner": "g.silva",
+    "category": "REVIEW",
+    "amount": 4700.0,
+    "deadline": "2026-07-22"
+  },
+  "response_hash": "sha256:1fe8c006c21886929ae09eccc5d6f9e2c4f7b2d5116f7929d845b61da440bb99",
+  "delivered_fields_hash": "sha256:1fe8c006c21886929ae09eccc5d6f9e2c4f7b2d5116f7929d845b61da440bb99"
+}

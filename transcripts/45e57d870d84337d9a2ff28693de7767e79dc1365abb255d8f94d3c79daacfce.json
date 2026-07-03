@@ -1,0 +1,11 @@
+{
+  "agent": "worker",
+  "response": {
+    "owner": "h.iqbal",
+    "category": "REPORT",
+    "amount": 5000,
+    "deadline": "2026-08-05"
+  },
+  "response_hash": "sha256:45e57d870d84337d9a2ff28693de7767e79dc1365abb255d8f94d3c79daacfce",
+  "delivered_fields_hash": "sha256:45e57d870d84337d9a2ff28693de7767e79dc1365abb255d8f94d3c79daacfce"
+}
