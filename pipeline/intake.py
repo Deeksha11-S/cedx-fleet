@@ -1,5 +1,6 @@
 from pathlib import Path
 import json
+import sqlite3  # <-- added for SQLite
 
 from email import policy
 from email.parser import BytesParser
@@ -10,6 +11,7 @@ from models.record import Record
 from pipeline.normalize import normalize_record
 from pipeline.validate import validate_record
 
+
 def parse_email(filepath) -> Record:
     """
     Parse an .eml file and convert it into a Record object.
@@ -18,7 +20,7 @@ def parse_email(filepath) -> Record:
     with open(filepath, "rb") as f:
         msg = BytesParser(policy=policy.default).parse(f)
 
-    body = msg.get_body(preferencelist=("plain"))
+    body = msg.get_body(preferencelist=("plain",))
 
     if body:
         text = body.get_content()
@@ -49,6 +51,7 @@ def parse_email(filepath) -> Record:
     )
 
     return normalize_record(record)
+
 
 def parse_pdf(filepath) -> Record:
     """
@@ -88,6 +91,52 @@ def parse_pdf(filepath) -> Record:
     )
 
     return normalize_record(record)
+
+
+def save_records_to_sqlite(records, db_path="records.db"):
+    """
+    Save a list of Record objects to a SQLite database.
+    Creates the 'records' table if it does not exist.
+    """
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    # Create table if not exists
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS records (
+            id TEXT,
+            owner TEXT,
+            deadline TEXT,
+            category TEXT,
+            notes TEXT,
+            version INTEGER,
+            amount REAL,
+            superseded INTEGER,
+            PRIMARY KEY (id, version)
+        )
+    """)
+
+    # Insert or replace records (using PRIMARY KEY conflict)
+    for record in records:
+        cursor.execute("""
+            INSERT OR REPLACE INTO records
+            (id, owner, deadline, category, notes, version, amount, superseded)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        """, (
+            record.id,
+            record.owner,
+            record.deadline,
+            record.category,
+            record.notes,
+            record.version,
+            record.amount,
+            1 if record.superseded else 0
+        ))
+
+    conn.commit()
+    conn.close()
+    print(f"\n✅ Saved {len(records)} records to {db_path}")
+
 
 def load_seed_data(seed_path):
     """
@@ -281,6 +330,11 @@ def load_seed_data(seed_path):
             print(f"{record.id:<10} ✅ VALID")
         else:
             print(f"{record.id:<10} ❌ {result.reason_code}")
+
+    # ---------------------------------------------------
+    # Save to SQLite (NEW)
+    # ---------------------------------------------------
+    save_records_to_sqlite(records, db_path="records.db")   # <-- added
 
     # ---------------------------------------------------
     # Return loaded records
